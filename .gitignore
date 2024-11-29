@@ -1,0 +1,18 @@
+# resources files
+resources/*
+!resources/README.md
+!resources/*/data_list.yaml
+
+# project files
+.venv/
+poetry.lock
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyi
+*.pyz
+*.pyzw
+*.build/
+*.cache/
+*.log
