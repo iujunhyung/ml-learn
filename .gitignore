@@ -1,7 +1,8 @@
 # resources files
-resources/*
-!resources/README.md
-!resources/*/data_list.yaml
+resources/classification/*
+!resources/classification/data_list.yaml
+resources/regression/*
+!resources/regression/data_list.yaml
 
 # project files
 .venv/
