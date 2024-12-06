@@ -19,5 +19,5 @@ def hprint(text: str, color: str = TextStyle.RED, bold: bool = True):
     style = f"{color}"
     if bold:
         style += TextStyle.BOLD
-    print(f"\n{style}{text}{TextStyle.RESET}")
+    print(f"\n{style}{text}{TextStyle.RESET}\n")
     
