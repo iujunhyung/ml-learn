@@ -98,3 +98,9 @@ Citations:
 [6] https://www.v7labs.com/blog/performance-metrics-in-machine-learning
 [7] https://www.purestorage.com/kr/knowledge/machine-learning-performance-metrics.html
 [8] https://www.geeksforgeeks.org/metrics-for-machine-learning-model/
+
+
+### KFold 교차검증(KFold Cross Validation)
+- **정의**: 데이터를 K개의 fold로 나누어 K번 모델을 학습하고 평가하는 방법
+- **특징**: 모델의 일반화 성능을 더 정확히 평가할 수 있으며, Overfitting을 방지하는 데 효과적
+
