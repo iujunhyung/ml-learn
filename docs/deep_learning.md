@@ -78,10 +78,26 @@ $$
   ![Flatten Layer](images/flatten-layer.png)
 
 - 순환 신경망(Recurrent Neural Network, RNN): 입력값과 출력값이 시퀀스(Sequence) 형태로 구성되어 있는 작업에 주로 사용되며, 순환층(Recurrent Layer)으로 구성되어 있습니다. 시계열 데이터 분석 작업에 활용됩니다.
+  - 일반 RNN (RNN): 순환층의 출력값을 다음 시간 단계의 입력값으로 사용하는 구조로, 이전 단계의 정보가 다음 단계의 입력값에 영향을 미치게끔 설계되어 있습니다. 하지만, 시간이 지남에 따라 기울기가 소실되어 과거 입력값이 현재 출력값에 영향을 미치지 못하는 문제가 있습니다.
+  ![RNN](images/deep-rnn.png)
 
-- 오토인코더(Autoencoder, AE): 입력값과 출력값이 동일한 작업에 주로 사용되며, 인코더(Encoder)와 디코더(Decoder)로 구성되어 있습니다. 차원 축소, 생성 작업 등에 활용됩니다.
+  - 장단기 메모리(LSTM, Long Short-Term Memory): RNN의 기울기 소실 문제를 해결하기 위해 제안된 모델로, 입력 게이트(Input Gate), 삭제 게이트(Forget Gate), 출력 게이트(Output Gate)로 구성되어 있습니다.
+  ![LSTM](images/deep-lstm.jpg)
 
-- 생성적 적대 신경망(Generative Adversarial Network, GAN): 생성 모델로 사용되며, 생성자(Generator)와 판별자(Discriminator)로 구성되어 있습니다.
+- 오토인코더(Autoencoder, AE): 입력값과 출력값이 동일한 작업에 주로 사용되며, 인코더(Encoder)와 디코더(Decoder)로 구성되어 있습니다. 입력값을 저차원으로 압축한 뒤, 다시 복원하는 과정을 통해 입력값을 재구성하는 방법으로, 데이터의 특징을 추출하거나 노이즈 제거 또는 이상탐지에도 사용됩니다.
+![Autoencoder](images/deep-autoencoder.png)
+![Autoencoder-Example](images/deep-autoencoder-example.png)
+  - 인코더(Encoder): 입력값을 저차원으로 압축하는 역할을 합니다.
+  - 디코더(Decoder): 인코더에서 압축된 정보를 복원하는 역할을 합니다.
+
+- 트랜스포머(Transformer): 어텐션(Attention) 메커니즘을 사용하여 시퀀스 데이터를 처리하는 모델로, RNN과 CNN의 단점을 보완하고, 병렬 처리가 가능하여 학습 속도를 높일 수 있습니다. 자연어 처리 작업에 주로 사용되며, 번역, 요약, 질문 응답 등의 작업에 활용됩니다.
+![Transformer](images/deep-transformer.png)
+
+  - 참조(Reference): 
+    1. [Attention is All You Need](https://arxiv.org/abs/1706.03762)
+    2. [The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer/)
+    3. [한국어 교육자료](https://wikidocs.net/31379)
+
 
 ## 딥러닝 프레임워크
 
