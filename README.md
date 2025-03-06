@@ -24,8 +24,8 @@ poetry install
 poetry shell
 ```
 
-## 노트북 실행
+## 사용법
 
-- ML 예제와 관련된 노트북은 `notebooks` 디렉토리에 있습니다.
+- ML 예제와 관련된 노트북은 `notes` 디렉토리에 있습니다.
 - .ipynb 파일을 VSCode에서 실행하거나, Jupyter Notebook에서 실행할 수 있습니다.
 - 코드 실행전 poetry에서 설치한 가상환경 인터프리터를 사용하도록 설정해주세요.(.venv/Scripts/python)
