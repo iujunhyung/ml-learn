@@ -5,8 +5,7 @@ description = ""
 authors = ["iujunhyung <junehyung@iyulab.com>"]
 readme = "README.md"
 packages = [
-  { include = "ml_learn", from = "src" },
-  { include = "utils", from = "src" }
+  { include = "internal", from = "lib" }
 ]
 
 [tool.poetry.dependencies]
