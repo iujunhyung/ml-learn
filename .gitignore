@@ -1,9 +1,3 @@
-# resources files
-resources/classification/*
-!resources/classification/data_list.yaml
-resources/regression/*
-!resources/regression/data_list.yaml
-
 # project files
 .venv/
 poetry.lock
@@ -17,3 +11,6 @@ __pycache__/
 *.build/
 *.cache/
 *.log
+
+# model files
+model/*
